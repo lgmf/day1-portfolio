@@ -1,0 +1,7 @@
+.card-group {
+	display: flex;
+	
+	& > .card {
+		padding: 15px;
+	}
+}

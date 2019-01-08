@@ -1,0 +1,12 @@
+.main > .about {
+	display: grid;
+	grid-gap: 30px;
+	text-align: center;
+	padding: 20vh 10vw;
+	background: $primary-contrast;
+	color: $primary;
+}
+
+.main > .about > .title {
+	font-size: 36px;
+}

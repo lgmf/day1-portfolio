@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background: $primary-contrast;
+  color: $primary;
+  transition: box-shadow .35s ease-in-out;
+}
+
+.header.-scrolled {
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+}
+
+.header > .link {
+  padding: 15px 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.header > .navgroup {
+  display: flex;
+
+  & > .navitem > .link {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    transition: background .35s ease-in-out;
+    font-weight: normal;
+  }
+
+  & > .navitem > .link:hover {
+    background-color: $primary;
+    color: $primary-contrast;
+  }
+}

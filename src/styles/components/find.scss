@@ -1,0 +1,12 @@
+.main > .find {
+	display: grid;
+	grid-gap: 75px;
+	text-align: center;
+	padding: 20vh 10vw;
+	background: white;
+	color: $primary-contrast;
+}
+
+.main > .find > .title {
+	font-size: 36px;
+}

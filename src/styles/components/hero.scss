@@ -1,0 +1,18 @@
+.main > .hero {
+	width: 100%;
+	display: grid;
+	grid-gap: 15px;
+	align-items: center;
+	justify-content: center;
+	background: $primary;
+	color: $primary-contrast;
+	padding: 25px 0;
+}
+
+.main > .hero > .text {
+	text-align: center;
+}
+
+.main > .hero > .img {
+	border-radius: 50%;
+}
