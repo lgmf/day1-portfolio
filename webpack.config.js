@@ -1,9 +1,14 @@
+require('dotenv').config();
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const environment = process.env.ENV || 'dev';
+const mode = environment === 'dev' ? 'development' : 'production';
+
 module.exports = {
-  mode: 'development',
+  mode,
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',
